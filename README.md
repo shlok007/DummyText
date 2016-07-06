@@ -21,8 +21,22 @@ Or install it yourself as:
     $ gem install DummyText
 
 ## Usage
+Add this to the first line of your file
 
-TODO: Write usage instructions here
+    require "DummyText"
+
+Create an object of the DummyText class.
+
+    dummytext=DummyText.new
+
+To generate 'x' number of words use the object to call method 'generate_words'
+
+    dummytext.generate_words(x)
+    
+Example:
+
+    dummytext.generate_words(5)
+    => "Lorem ipsum dolor sit amet,"
 
 ## Development
 
